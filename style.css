@@ -1,0 +1,251 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #f6f6f6;
+	scroll-behavior: smooth;
+}
+:root {
+	--bg: #455ce9;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.prevent-select {
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+#container {
+	width: 100%;
+	min-height: 100vh;
+	/* background-color: #1E1E1E; */
+	background-color: #000000e3;
+	padding: 40px 50px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+#cursor {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	/* background-color: #CC5200; */
+	/* background-color: #ffcb74; */
+	background-color: var(--bg);
+	position: fixed;
+	mix-blend-mode: difference;
+	z-index: 8;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+	pointer-events: none;
+	background-size: cover;
+}
+
+#nav {
+	width: calc(100% - 100px);
+	height: 100px;
+	z-index: 999;
+	margin-bottom: 20px;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px;
+	/* mix-blend-mode: difference; */
+}
+.logo {
+	z-index: 2;
+	width: 180px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo p {
+	font-size: 1.8rem;
+	line-height: 0.8;
+	cursor: pointer;
+}
+.logo p > span {
+	font-size: 0.8rem;
+}
+.button {
+	z-index: 999;
+	width: 80px;
+	height: 80px;
+	background-color: var(--bg);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.burger {
+	width: 100%;
+	&::after,
+	&::before {
+		content: "";
+		display: block;
+		height: 1px;
+		width: 40%;
+		margin: auto;
+		background-color: #fff;
+		position: relative;
+		transition: transform 0.3s;
+	}
+
+	&::after {
+		top: -5px;
+	}
+
+	&::before {
+		top: 5px;
+	}
+}
+
+.burgerActive {
+	width: 100%;
+	&::after,
+	&::before {
+		content: "";
+		display: block;
+		height: 1px;
+		width: 40%;
+		margin: auto;
+		background-color: #fff;
+		position: relative;
+		transition: transform 0.3s;
+	}
+	&::after {
+		transform: rotate(45deg);
+		top: -1px;
+	}
+
+	&::before {
+		transform: rotate(-45deg);
+		top: 0px;
+	}
+}
+
+.nav-list {
+	position: fixed;
+	right: 50px;
+	top: 20px;
+	width: 480px;
+	height: 650px;
+	background-color: var(--bg);
+	border-radius: 48px;
+	padding: 20vh 2vw;
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 0.1s, opacity 0.5s ease-in;
+}
+.nav-list.visible {
+	visibility: visible;
+	opacity: 1;
+}
+.nav-list p {
+	font-size: 3rem;
+	line-height: 1.5;
+}
+
+/* hero section */
+#hero {
+	width: inherit;
+	height: 100vh;
+	border: 0.8px solid #fff;
+	border-radius: 48px;
+	padding: 30vh 50px;
+}
+
+.heading {
+	width: 80vw;
+	height: 30vh;
+	/* background-color: red; */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.heading h1 {
+	font-size: 8.8rem;
+}
+.scroll {
+	width: 100px;
+	height: 40px;
+	border: 1px solid #fff;
+	border-radius: 12px;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bottom {
+	width: inherit;
+	height: 300px;
+	/* background-color: red; */
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.about-text {
+	width: 30rem;
+}
+.about-text p {
+	font-size: 1rem;
+}
+.contain3 {
+	font-size: 1rem;
+	margin-top: 20px;
+	display: flex;
+	gap: 1rem;
+}
+.contact-links {
+	line-height: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+    #cursor{
+        display: none;
+    }
+	#container {
+		padding: 7px 12px;
+	}
+	#nav {
+		width: calc(100% - 24px);
+	}
+	.logo {
+		justify-content: flex-start;
+	}
+    .button{
+        width: 70px;
+        height: 70px;
+    }
+	.nav-list {
+		width: 80vw;
+		height: 90vh;
+		border-radius: 25px;
+	}
+	#hero {
+		border-radius: 25px;
+		padding: 20vh 12px;
+	}
+	.heading h1 {
+		font-size: 4.5rem;
+        line-height: 0.8;
+	}
+	.bottom {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+        justify-content: flex-end
+        ;
+        gap: 20px;
+	}
+	.about-text p {
+		width: 70vw;
+	}
+}
