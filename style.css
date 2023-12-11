@@ -208,6 +208,20 @@ body {
 	line-height: 0.7;
 }
 
+/* Projects Section */
+#project{
+    width: inherit;
+	min-height: inherit;
+	border: 0.8px solid #fff;
+	border-radius: 48px;
+	padding: 30vh 50px;
+    margin-top: 50px;
+}
+.ff{
+    height: 152vh;
+    width: inherit;
+    background-color: red;
+}
 @media screen and (max-width: 600px) {
     #cursor{
         display: none;
@@ -226,6 +240,7 @@ body {
         height: 70px;
     }
 	.nav-list {
+        right: 20px;
 		width: 80vw;
 		height: 90vh;
 		border-radius: 25px;
@@ -235,7 +250,7 @@ body {
 		padding: 20vh 12px;
 	}
 	.heading h1 {
-		font-size: 4.5rem;
+		font-size: 3.8rem;
         line-height: 0.8;
 	}
 	.bottom {
