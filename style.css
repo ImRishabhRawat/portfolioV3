@@ -512,10 +512,11 @@ body {
 .social{
 	display: flex;
 	align-items: flex-start;
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap;
 	gap: 20px;
 }
 .social>p{
+	width: fit-content;
 	padding: 7px 14px;
 	border: .8px solid #fff;
 	border-radius: 12px;
