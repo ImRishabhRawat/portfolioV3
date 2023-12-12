@@ -159,6 +159,15 @@ body {
 	line-height: 1.5;
 }
 
+.lnks{
+	display: flex;
+	gap: 20px;
+	margin-top: 5vmin;
+}
+.lnks>p{
+	font-size: 2rem;
+	font-weight: 400;
+}
 /* hero section */
 #hero {
 	width: inherit;
