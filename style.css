@@ -453,7 +453,7 @@ body {
 	flex-direction: column;
 	gap: 20px;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
 	border: 1px solid #fff;
 	border-radius: 48px;
 }
@@ -602,6 +602,22 @@ body {
 	#skill {
 		padding-bottom: 10vh;
 		margin-bottom: 5vh;
+	}
+	#talk{
+		flex-direction: column;
+	}
+	.leftTalk{
+		width: 100%;
+	}
+	.leftTalk p{
+		width: 100%;
+		font-size: 4rem;
+	}
+	.rightTalk{
+		width: 100%;
+	}
+	.rightTalk p{
+		width: 100%;
 	}
 	#footer {
 		padding-left: 12px;
