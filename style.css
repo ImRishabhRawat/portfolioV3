@@ -232,6 +232,9 @@ body {
 .resume {
 	margin-top: 1vmin;
 }
+.resume a{
+	text-decoration: underline;
+}
 .contain3 {
 	font-size: 1rem;
 	margin-top: 20px;
