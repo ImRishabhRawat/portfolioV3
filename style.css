@@ -6,7 +6,6 @@
 	color: #f6f6f6;
 	scroll-behavior: smooth;
 	font-family: HelveticaNowDisplay-Medium;
-
 }
 :root {
 	--bg: #455ce9;
@@ -180,18 +179,17 @@ body {
 .heading h1 {
 	font-size: 10rem;
 	font-family: HelveticaNowDisplay-Medium;
-	line-height: .8;
+	line-height: 0.8;
 }
 
-.heading h1 span{
+.heading h1 span {
 	margin-left: 12vw;
 }
-.top{
-		display: flex;
+.top {
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 100px;
-
 }
 .scroll {
 	width: 100px;
@@ -203,14 +201,14 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-.down{
+.down {
 	/* padding: 20px 40px; */
 	width: 150px;
 	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: .5px solid #fff;
+	border: 0.5px solid #fff;
 	border-radius: 25px;
 }
 .bottom {
@@ -246,11 +244,11 @@ body {
 	padding: 50px 50px;
 	margin-top: 50px;
 }
-#project h3{
+#project h3 {
 	font-size: 4rem;
 	font-weight: 400;
 }
-.pro{
+.pro {
 	margin-top: 50px;
 	width: inherit;
 	min-height: inherit;
@@ -259,7 +257,7 @@ body {
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
 }
-.proj{
+.proj {
 	width: 600px;
 	height: 700px;
 	/* background-color: blue; */
@@ -271,40 +269,39 @@ body {
 	align-items: center;
 }
 
-.proTop{
+.proTop {
 	width: 80%;
 	height: 70%;
 	/* background-color: red; */
 	margin-bottom: 20px;
 }
-.proTop>img{
+.proTop > img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 43px;
 }
-.proBottom{
+.proBottom {
 	width: 80%;
 	height: 30%;
 	/* background-color: rgb(73, 46, 46); */
 }
-.proName{
+.proName {
 	font-size: 2rem;
 	font-weight: 400;
 	/* text-decoration: underline; */
 }
-.proBottom>div{
+.proBottom > div {
 	margin-top: 25px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 12px;
 }
-.tag{
-	padding: 4px 7px ;
-	border: .7px solid #fff;
+.tag {
+	padding: 4px 7px;
+	border: 0.7px solid #fff;
 	border-radius: 12px;
 }
-
 
 /* skill section  */
 .box {
@@ -332,9 +329,9 @@ body {
 }
 
 #skill {
-	min-height: 90vh;
+	min-height: 100vh;
 	width: 100%;
-	position: relative;
+	/* position: relative; */
 	z-index: 9;
 	padding: 10vw 60px;
 	margin-bottom: 5vw;
@@ -348,31 +345,30 @@ body {
 	text-transform: uppercase;
 	color: #fff;
 	margin-bottom: 20px;
-
 }
 
-#skill-left{
+#skill-left {
 	width: 40%;
 	height: inherit;
 	/* background-color: red;	 */
 }
-#skill-right{
+#skill-right {
 	width: 60%;
-	height: inherit;position: relative;
+	height: inherit;
+	position: relative;
 	top: 10vh;
 	/* background-color: rebeccapurple; */
 }
 
-#skill-left h1{
+#skill-left h1 {
 	font-size: 4rem;
 	font-weight: 400;
 	line-height: 1;
 }
-#skill-left p{
+#skill-left p {
 	margin-top: 10px;
 	font-size: 1.2rem;
 }
-
 
 .scircle {
 	width: 150px;
@@ -414,21 +410,16 @@ body {
 	opacity: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+#footer {
+	width: inherit;
+	display: flex;
+	justify-content: space-between;
+}
+#footer p {
+	font-size: 1.1rem;
+}
 
 /* media Queries */
-
 
 @media screen and (max-width: 1200px) {
 	#container {
@@ -437,14 +428,14 @@ body {
 	#nav {
 		width: calc(100% - 28px);
 	}
-	.top{
+	.top {
 		flex-direction: column;
 		align-items: flex-start;
 	}
 	.heading h1 {
 		font-size: 8rem;
 	}
-	.down{
+	.down {
 		margin-left: 50vw;
 	}
 	.bottom {
@@ -453,32 +444,32 @@ body {
 		justify-content: flex-end;
 		gap: 20px;
 	}
-	#project{
-		padding: 12px 5px ;
+	#project {
+		padding: 12px 5px;
 	}
-	#project>h3{
+	#project > h3 {
 		font-size: 3.8rem;
 	}
-	.pro{
+	.pro {
 		grid-template-columns: 1fr;
 	}
-	.proj{
+	.proj {
 		width: inherit;
 		padding: 50px 5px;
 		border-radius: 43px;
 	}
-	#skill{
-		padding: 24px 10px ;
+	#skill {
+		padding: 24px 10px;
 		flex-direction: column;
 		min-height: inherit;
 	}
-	.scircle{
+	.scircle {
 		display: none;
 	}
-	.box{
+	.box {
 		width: 90vw;
 	}
-	#project>h3{
+	#project > h3 {
 		font-size: 2rem;
 		padding-left: 12px;
 	}
@@ -488,10 +479,10 @@ body {
 	#skill-left h1 {
 		font-size: 3.5rem;
 	}
-	.box h3{
+	.box h3 {
 		font-size: 1.8rem;
 	}
-	.box h4{
+	.box h4 {
 		font-size: 1.5rem;
 	}
 }
@@ -529,11 +520,11 @@ body {
 	.about-text p {
 		width: 70vw;
 	}
-	#project>h3{
+	#project > h3 {
 		font-size: 1.8rem;
 		padding-left: 12px;
 	}
-	#skill{
+	#skill {
 		min-height: inherit;
 	}
 	#skill-left h2 {
@@ -542,10 +533,24 @@ body {
 	#skill-left h1 {
 		font-size: 2.8rem;
 	}
-	.box h3{
+	.box h3 {
 		font-size: 1.2rem;
 	}
-	.box h4{
+	.box h4 {
 		font-size: 1rem;
+	}
+	#skill {
+		padding-bottom: 10vh;
+		margin-bottom: 5vh;
+	}
+	#footer{
+		padding-left: 12px;
+	}
+	#footer>p{
+		font-size: .8rem
+
+	}
+	.none{
+		display: none;
 	}
 }
