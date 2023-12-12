@@ -553,6 +553,7 @@ body {
 	}
 	.proj {
 		width: inherit;
+		height: max-content;
 		padding: 50px 5px;
 		border-radius: 43px;
 	}
@@ -625,6 +626,9 @@ body {
 	#project > h3 {
 		font-size: 1.8rem;
 		padding-left: 12px;
+	}
+	.proTop{
+		padding: 7px 4px;
 	}
 	#skill {
 		min-height: inherit;
