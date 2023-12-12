@@ -235,6 +235,7 @@ body {
 .resume a{
 	text-decoration: underline;
 }
+
 .contain3 {
 	font-size: 1rem;
 	margin-top: 20px;
@@ -505,7 +506,20 @@ body {
 	font-size: 3rem;
 	text-transform: capitalize;
 }
-
+.underline{
+	text-decoration: underline;
+}
+.social{
+	display: flex;
+	align-items: flex-start;
+	/* flex-wrap: wrap; */
+	gap: 20px;
+}
+.social>p{
+	padding: 7px 14px;
+	border: .8px solid #fff;
+	border-radius: 12px;
+}
 .smalltxt {
 	font-weight: 400;
 }
