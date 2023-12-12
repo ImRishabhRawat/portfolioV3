@@ -45,6 +45,12 @@ function head() {
 	});
 }
 head();
+const timeline = gsap.timeline();
+timeline.from("#nav", { opacity: 0, y: -50, stagger: 0.3 });
+timeline.from(".top", { opacity: 0, y: 50, stagger: 0.2 });
+timeline.from(".bottom", { opacity: 0, y: 50, stagger: 0.2 });
+
+
 
 gsap.to(".logoName", {
 	autoAlpha: 0,
