@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 function circleMouseFolower(x, y) {
 	let width = x / 2;
 	let height = y / 2;
@@ -18,13 +19,10 @@ var button = document.querySelector(".button");
 var burger = document.querySelector("#hemburger");
 var navList = document.querySelector(".nav-list");
 
-
 button.addEventListener("click", function () {
 	burger.classList.toggle("burgerActive");
 	burger.classList.toggle("burger");
 	navList.classList.toggle("visible");
-
-
 });
 
 function head() {
@@ -47,3 +45,14 @@ function head() {
 	});
 }
 head();
+
+gsap.to(".logoName", {
+	autoAlpha: 0,
+	scrollTrigger: {
+		trigger: "body",
+		start: "top -200vh",
+		end: "bottom 100vh",
+		markers: false,
+		toggleActions: "play none none reverse",
+	},
+});
