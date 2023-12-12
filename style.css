@@ -225,6 +225,9 @@ body {
 .about-text p span {
 	text-decoration: underline;
 }
+.resume{
+	margin-top: 1vmin;
+}
 .contain3 {
 	font-size: 1rem;
 	margin-top: 20px;
@@ -410,6 +413,63 @@ body {
 	opacity: 0;
 }
 
+/* Contact Section  */
+#talk {
+	width: inherit;
+	min-height: inherit;
+	border: 1px solid #fff;
+	border-radius: 48px;
+	margin-bottom: 25px;
+	display: flex;
+}
+
+.leftTalk {
+	width: 50%;
+	height: inherit;
+	/* background-color: red; */
+	padding: 50px 6px;
+	font-weight: 900;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.leftTalk p{
+	width: 80%;
+	text-transform: uppercase;
+	font-size: 5rem;
+	line-height:.81;
+	text-align: center;
+
+}
+
+
+.rightTalk {
+	width: 50%;
+	height: inherit;
+	padding: 50px 6px;
+	font-weight: 900;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	justify-content: flex-start;
+	border: 1px solid #fff;
+	border-radius: 48px;
+}
+.rightTalk p{
+	width: 80%;
+}
+.rightTalk .letsTalk{
+	font-size: 3rem;
+	text-transform: capitalize;
+}
+
+.smalltxt{
+	font-weight: 400;
+}
+/* footer sefction */
+
 #footer {
 	width: inherit;
 	display: flex;
@@ -543,14 +603,13 @@ body {
 		padding-bottom: 10vh;
 		margin-bottom: 5vh;
 	}
-	#footer{
+	#footer {
 		padding-left: 12px;
 	}
-	#footer>p{
-		font-size: .8rem
-
+	#footer > p {
+		font-size: 0.8rem;
 	}
-	.none{
+	.none {
 		display: none;
 	}
 }
