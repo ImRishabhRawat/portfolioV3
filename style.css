@@ -232,7 +232,7 @@ body {
 .resume {
 	margin-top: 1vmin;
 }
-.resume a{
+.resume a {
 	text-decoration: underline;
 }
 
@@ -506,19 +506,19 @@ body {
 	font-size: 3rem;
 	text-transform: capitalize;
 }
-.underline{
+.underline {
 	text-decoration: underline;
 }
-.social{
+.social {
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
 	gap: 20px;
 }
-.social>p{
+.social > p {
 	width: fit-content;
 	padding: 7px 14px;
-	border: .8px solid #fff;
+	border: 0.8px solid #fff;
 	border-radius: 12px;
 }
 .smalltxt {
@@ -536,7 +536,11 @@ body {
 }
 
 /* media Queries */
-
+/* @media screen and (min-width: 1600px) {
+	.heading h1 {
+		font-size: 14rem;
+	}
+} */
 @media screen and (max-width: 1200px) {
 	#container {
 		padding: 14px 14px;
@@ -645,7 +649,7 @@ body {
 		font-size: 1.8rem;
 		padding-left: 12px;
 	}
-	.proTop{
+	.proTop {
 		padding: 7px 4px;
 	}
 	#skill {
